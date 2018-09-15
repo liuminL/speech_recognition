@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/wgx/Downloads/qeyy/src/micro/src/awaken2/include/msp_cmn.h
+msp_types.h
+/home/wgx/Downloads/qeyy/src/micro/src/awaken2/include/msp_types.h
+
+/home/wgx/Downloads/qeyy/src/micro/src/awaken2/include/msp_errors.h
+
+/home/wgx/Downloads/qeyy/src/micro/src/awaken2/include/msp_types.h
+
+/home/wgx/Downloads/qeyy/src/micro/src/awaken2/include/qivw.h
+msp_types.h
+/home/wgx/Downloads/qeyy/src/micro/src/awaken2/include/msp_types.h
+
+/home/wgx/Downloads/qeyy/src/micro/src/awaken2/src/awaken_sample.cpp
+stdlib.h
+-
+stdio.h
+-
+unistd.h
+-
+errno.h
+-
+msp_cmn.h
+/home/wgx/Downloads/qeyy/src/micro/src/awaken2/src/msp_cmn.h
+qivw.h
+/home/wgx/Downloads/qeyy/src/micro/src/awaken2/src/qivw.h
+msp_errors.h
+/home/wgx/Downloads/qeyy/src/micro/src/awaken2/src/msp_errors.h
+

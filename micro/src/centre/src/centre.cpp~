@@ -1,0 +1,68 @@
+#include "ros/ros.h"
+#include "includedMSG.h"
+//#include "loadCfg.h"
+#include "centreNode.h"
+#include <boost/thread.hpp>
+
+//#include <signal.h>//progress ctrl+c
+
+////////////////////////
+centreNode *ctrNoP;
+////////////////////////
+void cECallback(const centre::event::ConstPtr& msg)
+{
+  MSG temp;
+  temp.getMessage(*msg);
+  ctrNoP->event->write(temp);
+}
+
+bool ctrlCpressed = false;
+
+void Thread1(){
+	ROS_INFO("mAstart");
+    for(;;){
+        ctrNoP->missionAnalysis();
+	if(ctrlCpressed)break;
+    }
+}
+void Thread2(){
+	ROS_INFO("tSstart");
+    for(;;){
+        ctrNoP->taskScheduling();
+	if(ctrlCpressed)break;
+    }
+}
+
+/*void sig_handler( int sig)
+{
+       if(sig == SIGINT){
+		ctrlCpressed = true;
+              ROS_INFO("ctrl+c has been keydownd");
+              exit(0);
+       }
+}*/
+
+int main(int argc, char **argv)
+{
+
+	//signal(SIGINT, sig_handler);//progress ctrl+c
+
+   rscFail.message->eventID = 255;
+    ros::init(argc, argv, "centre");
+
+  ros::NodeHandle n;
+
+  ros::Subscriber sub = n.subscribe("centreEvent", 1000, cECallback);
+  ros::Publisher pub = n.advertise<centre::event>("centreFeedback", 1000);
+
+  ctrNoP = new centreNode(&pub);
+    ROS_INFO("centreOK");
+	boost::thread thread1(&Thread1);
+	boost::thread thread2(&Thread2);
+
+   ROS_INFO("Start spin");
+  ros::spin();
+	thread2.join();
+	thread1.join();
+  return 0;
+}

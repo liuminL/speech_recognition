@@ -1,0 +1,53 @@
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+APPID	xfmic_node.cpp	18;"	d	file:
+BITS	xfmic_node.cpp	21;"	d	file:
+BLKCNT	xfmic_node.cpp	23;"	d	file:
+BLKLEN	xfmic_node.cpp	24;"	d	file:
+CHNS	xfmic_node.cpp	20;"	d	file:
+DEVICE	xfmic_node.cpp	25;"	d	file:
+FRMSMP	xfmic_node.cpp	22;"	d	file:
+MAX_PATH	xfmic_node.cpp	17;"	d	file:
+RATE	xfmic_node.cpp	19;"	d	file:
+appid	xfmic_node.cpp	/^char appid[9] = {APPID};			\/\/ appid$/;"	v
+bits	xfmic_node.cpp	/^int bits = BITS;					\/\/ bit width$/;"	v
+buf	xfmic_node.cpp	/^unsigned char buf[BLKCNT][BLKLEN];	\/\/ audio buffer$/;"	v
+bvep	xfmic_node.cpp	/^int bvep  = 3000;					\/\/ time for vad begin endpoint detection$/;"	v
+chat	xfmic_node.cpp	/^const char *chat[4]={"回家","你来自哪里","你有什么本领","自我介绍"};$/;"	v
+chat_com	xfmic_node.cpp	/^std_msgs::String chat_com;$/;"	v
+chns	xfmic_node.cpp	/^int chns = CHNS;					\/\/ channels$/;"	v
+com	xfmic_node.cpp	/^const char *com[7];$/;"	v
+com_chat_pub	xfmic_node.cpp	/^int com_chat_pub(const char *rslt){$/;"	f
+com_move	xfmic_node.cpp	/^std::map<const char*, const char>                   com_move;$/;"	v
+com_move_pub	xfmic_node.cpp	/^int com_move_pub(const char *rslt){$/;"	f
+comm	xfmic_node.cpp	/^const char *comm[7]={"启动","停止","前进","后退","左转","右转"};$/;"	v
+comma_pub	xfmic_node.cpp	/^ros::Publisher *comma_pub = NULL;$/;"	v
+command	xfmic_node.cpp	/^std_msgs::String command;$/;"	v
+dev_name	xfmic_node.cpp	/^char dev_name[MAX_PATH] = {DEVICE};	\/\/ device name$/;"	v
+evep	xfmic_node.cpp	/^int evep  = 1000;					\/\/ time for vad end endpoint detection$/;"	v
+farmode	xfmic_node.cpp	/^int farmode = 1;					\/\/ far or normal engine used$/;"	v
+iat_flag	xfmic_node.cpp	/^char iat_flag = 1;					\/\/ enable or disable iat process$/;"	v
+iat_proc_func	xfmic_node.cpp	/^int iat_proc_func(int fd)$/;"	f
+id_iat	xfmic_node.cpp	/^pthread_t id_iat = 0;				\/\/ thread iat process$/;"	v
+id_key	xfmic_node.cpp	/^pthread_t id_key = 0;				\/\/ thread key process$/;"	v
+id_rec	xfmic_node.cpp	/^pthread_t id_rec = 0;				\/\/ thread rec process$/;"	v
+load_path	xfmic_node.cpp	/^char load_path[MAX_PATH] = {0};		\/\/ audio file path for load$/;"	v
+loop	xfmic_node.cpp	/^int loop = 100;						\/\/ loop count$/;"	v
+main	xfmic_node.cpp	/^int main(int argc, char **argv)$/;"	f
+micpt	xfmic_node.cpp	/^ros::Publisher *micpt = NULL;$/;"	v
+micpt1	xfmic_node.cpp	/^ros::Publisher *micpt1 = NULL;$/;"	v
+msg	xfmic_node.cpp	/^std_msgs::String msg;$/;"	v
+rate	xfmic_node.cpp	/^unsigned int rate = RATE;			\/\/ sample rate$/;"	v
+readp	xfmic_node.cpp	/^volatile int readp = 0;				\/\/ read position$/;"	v
+run_flag	xfmic_node.cpp	/^volatile int run_flag = 0;			\/\/ run flag$/;"	v
+save_path	xfmic_node.cpp	/^char save_path[MAX_PATH] = {0};		\/\/ audio file path for save$/;"	v
+sem_audio	xfmic_node.cpp	/^sem_t sem_audio;					\/\/ semaphore for audio data$/;"	v
+snd_pcm_init	xfmic_node.cpp	/^int snd_pcm_init(snd_pcm_t *handle)$/;"	f
+thread_iat_proc	xfmic_node.cpp	/^void *thread_iat_proc(void *args)$/;"	f
+thread_key_proc	xfmic_node.cpp	/^void *thread_key_proc(void *args)$/;"	f
+thread_rec_proc	xfmic_node.cpp	/^void *thread_rec_proc(void *args)$/;"	f
+writep	xfmic_node.cpp	/^volatile int writep = 0;			\/\/ write position$/;"	v

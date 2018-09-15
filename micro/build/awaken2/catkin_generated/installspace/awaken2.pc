@@ -1,0 +1,8 @@
+prefix=/home/wgx/Downloads/qeyy/src/micro/install
+
+Name: awaken2
+Description: Description of awaken2
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/wgx/Downloads/qeyy/src/micro/install/lib 
+Requires: 

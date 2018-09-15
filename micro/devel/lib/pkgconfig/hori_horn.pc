@@ -1,0 +1,8 @@
+prefix=/home/wgx/Downloads/qeyy/src/micro/devel
+
+Name: hori_horn
+Description: Description of hori_horn
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/wgx/Downloads/qeyy/src/micro/devel/lib 
+Requires: 

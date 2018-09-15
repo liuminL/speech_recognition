@@ -1,0 +1,2 @@
+awaken2:centre:hori_horn:hori_voicecenter:xfmic
+-DCATKIN_DEVEL_PREFIX=/home/wgx/Downloads/qeyy/src/micro/devel -DCMAKE_INSTALL_PREFIX=/home/wgx/Downloads/qeyy/src/micro/install -G Unix Makefiles

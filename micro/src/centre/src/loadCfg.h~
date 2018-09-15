@@ -1,0 +1,23 @@
+#pragma once
+
+#include <fstream>
+#include "readINI.h"
+
+class loadCfg {
+public:
+    loadCfg(){
+        fileName = "eventCfg.ini";
+    }
+    ~loadCfg(){    }
+private:
+    std::string fileName;
+    bool getCfg(void){
+        uint index = 0;
+        uint tempBuff[3] = {0};
+
+    }
+public:
+    int readCfg(uint *pri,uint *resource,uint *isTakeRsc){
+
+    }
+};

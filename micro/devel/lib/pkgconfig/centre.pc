@@ -1,0 +1,8 @@
+prefix=/home/wgx/Downloads/qeyy/src/micro/devel
+
+Name: centre
+Description: Description of centre
+Version: 0.0.0
+Cflags: -I/home/wgx/Downloads/qeyy/src/micro/devel/include
+Libs: -L/home/wgx/Downloads/qeyy/src/micro/devel/lib 
+Requires: message_runtime roscpp rospy std_msgs

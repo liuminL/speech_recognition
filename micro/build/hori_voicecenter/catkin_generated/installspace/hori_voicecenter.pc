@@ -1,0 +1,8 @@
+prefix=/home/wgx/Downloads/qeyy/src/micro/install
+
+Name: hori_voicecenter
+Description: Description of hori_voicecenter
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/wgx/Downloads/qeyy/src/micro/install/lib 
+Requires: 

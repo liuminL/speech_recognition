@@ -1,0 +1,3 @@
+<launch>
+	<node pkg = "centre" type = "hori_centre" name = "centrenode" output = "screen"/>
+</launch>
